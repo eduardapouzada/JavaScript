@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
         palpites.innerHTML = '';
         divColor.innerHTML = '';
         divColor.style.background = '' 
+        divColor.style.boxShadow = ''
         button_reiniciar.innerHTML = ''
     }
 

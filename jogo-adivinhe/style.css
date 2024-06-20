@@ -49,7 +49,7 @@ label{
     background: linear-gradient(to right, #a9cef4 50%, #7EA0B7 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: background-position 2s;
+    transition: background-position 1s;
 }
 
 .input_button:hover{

@@ -1,0 +1,83 @@
+html,body{
+    height: 99%;
+}
+body{ 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box{
+    width: 70%; height: 70%; 
+    background-color:rgb(252, 252, 252);
+    box-shadow: inset 0px 0px 8px #597081; 
+    border-radius: 10px;
+}
+
+fieldset{
+    width: 50%; margin:50px auto;
+    border: none;
+}
+
+.title{
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.subtitle{
+    margin: 25px 0px;
+}
+
+label{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.input_palpite{
+    border: 2px solid #7EA0B7;
+    border-radius: 4px;
+    height: 22px;
+}
+
+.input_button{
+    border: none;
+    border-radius: 4px;
+    width: 80px; height: 25px;
+    color: white; font-weight: 600;
+    background-color: #7EA0B7;
+    cursor: pointer;
+}
+
+.color{
+    width: 96%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.palpites, .baixoOuAlto{
+    color: #3983b5;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+
+.baixoOuAlto{
+    font-size: 10pt;
+    letter-spacing: 1px;
+}
+
+.reiniciar{
+    background-color: #7EA0B7;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin: 10px 12px;
+
+    cursor: cursor;
+
+}

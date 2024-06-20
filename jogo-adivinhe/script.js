@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function(){
         
         if (contagem === 1){
             palpites.innerHTML = 'Palpites anteriores: '
-            
         }
         
         if (contagem <=  10){
@@ -53,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function(){
             divColor.innerHTML = 'Suas tentativas acabaram! Reinicie o jogo para jogar novamente.'
             divColor.style.background = 'gray'
             divColor.style.color = 'black'
+            baixoOuAlto.innerHTML = ''
             botao_reiniciar()
         }
 

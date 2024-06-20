@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 botao_reiniciar()
                 
             }else{
-                var restam = 11
+                var restam = 11 /* Para a conta dar certo */
                 restam -= contagem
                 divColor.innerHTML = 'Errado!!! Restam ' + restam + ' tentativas.' 
                 divColor.style.background = 'red'

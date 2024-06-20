@@ -45,8 +45,15 @@ label{
     border-radius: 4px;
     width: 80px; height: 25px;
     color: white; font-weight: 600;
-    background-color: #7EA0B7;
     cursor: pointer;
+    background: linear-gradient(to right, #a9cef4 50%, #7EA0B7 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 2s;
+}
+
+.input_button:hover{
+    background-position:  left bottom;
 }
 
 .color{

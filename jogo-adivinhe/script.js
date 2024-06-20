@@ -50,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
         }else{
             divColor.innerHTML = 'Suas tentativas acabaram! Reinicie o jogo para jogar novamente.'
-            divColor.style.background = 'gray'
+            divColor.style.background = '#7EA0B7'
             divColor.style.color = 'black'
+            divColor.style.boxShadow = ' inset 1px 1px 20px #a9cef4'
             baixoOuAlto.innerHTML = ''
             botao_reiniciar()
         }

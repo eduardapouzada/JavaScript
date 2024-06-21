@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    var aleatorio = Math.floor(Math.random() * 100) + 1; 
-    var contagem = 1;
+    let aleatorio = Math.floor(Math.random() * 100) + 1; 
+    let contagem = 1;
 
-    var botao = document.querySelector('.input_button')
-    var input = document.querySelector('.input_palpite')
+    let botao = document.querySelector('.input_button')
+    let input = document.querySelector('.input_palpite')
 
-    var palpites = document.querySelector('.palpites');
+    let palpites = document.querySelector('.palpites');
 
-    var divColor = document.querySelector('.color');
-    var button_reiniciar = document.querySelector('.button_reiniciar');
+    let divColor = document.querySelector('.color');
+    let button_reiniciar = document.querySelector('.button_reiniciar');
 
-    var baixoOuAlto = document.querySelector('.baixoOuAlto');
+    let baixoOuAlto = document.querySelector('.baixoOuAlto');
 
     botao.addEventListener('click', function(){
-        var palpite = Number(input.value);
+        let palpite = Number(input.value);
         
         if (contagem === 1){
             palpites.innerHTML = 'Palpites anteriores: '
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 botao_reiniciar()
                 
             }else{
-                var restam = 11 /* Para a conta dar certo */
+                let restam = 11 /* Para a conta dar certo */
                 restam -= contagem
                 divColor.innerHTML = 'Errado!!! Restam ' + restam + ' tentativas.' 
                 divColor.style.background = 'red'

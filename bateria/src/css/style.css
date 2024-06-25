@@ -1,0 +1,91 @@
+.box-bg{ 
+   width: 800px;
+    height: 600px;
+    background-image: url('/bateria/src/assets/img/bg-bateria.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+    position: relative;
+
+}
+
+.crash-ride-E img{ 
+    position: absolute;
+    top: 19%; 
+    left:16%; 
+    transform: rotate(-7.2deg) scale(1.5);
+}
+
+.crash-ride-E button{
+    left: 15%;
+    top: 15%;
+}
+
+.crash-ride-R button{
+    left: 28%;
+    top: 16%;
+}
+
+.hihat-open-I img{
+    position: absolute;
+    top: 30.7%;
+    left: 69.5%;
+    transform:  scale(1.8);
+}
+
+.hihat-open-I button{
+    left: 66%; 
+    top: 28%;
+}
+
+.hihat-close-K button{
+    left: 85%;
+    top: 30%;
+}
+
+button{
+    position: absolute;
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 36px; height: 34px;
+    font-weight: 800;
+}
+
+
+.caixa-J button{
+    left: 70%;
+    top: 54%;
+}
+
+.bumbo-B button{
+    left: 47%;
+    top: 65%;
+    width: 50px; height: 50px;
+}
+
+.tom1-G button{
+    left: 38%;
+    top: 43%;
+}
+
+.tom2-H button{
+    left: 58%;
+    top: 46%;
+}
+
+.tom-low-F button{
+    left: 26%;
+    top: 64%;
+}
+
+
+
+
+
+
+
+
+
+
+

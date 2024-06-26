@@ -1,0 +1,64 @@
+.modalright{
+    width: 255px; 
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.918);
+    color: white;
+    margin-top: 20px;
+    font-family: 'Handlee', cursive;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modalright.show {
+    opacity: 1;
+}
+
+.icon-menu-open{
+    background-image: url('/bateria/src/assets/img/icon/icon-nav.png');
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    width: 30px; height: 30px;
+    position: relative; float: right;
+}
+
+.icon-menu-close{
+    width: 30px; height: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 15pt;
+    display: flex; align-items: center;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+p{
+    margin: 10px 8%;
+    padding: 10px 0px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.letra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; height: 30px;
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 6px white; 
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.frase{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 800;
+    letter-spacing: 1px;
+}

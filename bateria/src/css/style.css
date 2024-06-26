@@ -23,6 +23,7 @@
     top: 19%; 
     left:16%; 
     transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .045s;
 }
 
 .crash-ride-E button{
@@ -37,7 +38,7 @@
 
 .hihat-open-I img{
     position: absolute;
-    top: 30.7%;
+    top: 30.5%;
     left: 69.5%;
     transform:  scale(1.8);
 }

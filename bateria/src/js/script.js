@@ -1,9 +1,9 @@
 function play(button, audioId){
-    var audio = document.getElementById(audioId);
+    let audio = document.getElementById(audioId);
     audio.play();
 }
 
-var audiosMap = {
+let audiosMap = {
     'E' : 'audioE',
     'R' : 'audioR',
     'I' : 'audioI',
@@ -15,13 +15,45 @@ var audiosMap = {
     'B' : 'audioB',
 };
 
-document.addEventListener('keydown', function(event){
-    var key = event.key.toUpperCase();
+let atualAudio = null;
+
+function play(button, audioId) {
+    let audio = document.getElementById(audioId);
     
-    if (key in audiosMap){
-        var audioId = audiosMap[key];
-        var audio = document.getElementById(audioId);
-        audio.play();  
+    if (atualAudio && !atualAudio.paused) {
+        atualAudio.pause();
+        atualAudio.currentTime = 0;
     }
+
+    audio.play();
+    atualAudio = audio;
+}
+
+document.addEventListener('keydown', function(event) {
+    let key = event.key.toUpperCase();
+
+    if (key in audiosMap) {
+        let audioId = audiosMap[key];
+        play(null, audioId);
+    }
+
+    let e = document.querySelector('.crash-ride-E-img');
+    let k = document.querySelector('.hihat-open-I-img');
+    
+
+    if (key === 'E' || key === 'R'){
+        e.style.transform = 'rotate(0deg) scale(1.5)'
+        setTimeout(() => {
+            e.style.transform = 'rotate(-7.2deg) scale(1.5)';
+        }, 100)
+    }
+
+    if (key === 'K'){
+        k.style.top = '31%'
+        setTimeout(() => {
+            k.style.top = '30.5%'
+        }, 100)
+    }
+
 })
 

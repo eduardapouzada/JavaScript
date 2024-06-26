@@ -60,6 +60,11 @@ button{
     font-weight: 800;
 }
 
+button:hover{
+    cursor: pointer;
+    border: none;
+}
+
 
 .caixa-J button{
     left: 70%;

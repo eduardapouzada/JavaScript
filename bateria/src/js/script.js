@@ -49,9 +49,9 @@ document.addEventListener('keydown', function(event) {
     }
 
     if (key === 'K'){
-        k.style.top = '31%'
+        k.style.top = '32.5%'
         setTimeout(() => {
-            k.style.top = '30.5%'
+            k.style.top = '32%'
         }, 100)
     }
 

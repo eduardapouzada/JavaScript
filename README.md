@@ -6,7 +6,7 @@ Projetos para treinar JS.
 <strong>Projeto de um jogo de adivinhação. <br>
 É selecionado um número aleatóriamente e o usuário tem dez tentativas para adivinhar. <br> </strong>
 - Link: <a href="https://eduardapouzada.github.io/JavaScript/jogo-adivinhe/index.html">https://eduardapouzada.github.io/JavaScript/jogo-adivinhe/index.html</a> <br>
-- Referência: <a href="https://codepen.io/amdsouza92/pen/xdooWa">https://codepen.io/amdsouza92/pen/xdooWa</a>
+- Referência: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/A_first_splash">https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/A_first_splash</a>
 
 <hr>
 

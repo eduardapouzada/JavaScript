@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Memes</title>
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+            <input type="file" name="input-file" id="input-file" class="input-file" accept="image/*">
+            <div class="container-img" id="container-img">
+                <img src="./src/assets/symbols-loading.svg" class="loading" alt="">
+                <div  class="container-text" id="container-text">
+                    <p class="content-text"></p>
+                </div> 
+            </div>
+            
+            <div class="button-download">
+                <img src="./src/assets/symbols-download.svg" alt="">
+                <p>Download</p>
+            </div>
+            
+        </div>
+        <div class="container-right">
+            <h3>Gerador de Memes</h3>
+            <input type="text" name="input-text" id="input-text" class="input-text" placeholder="Digite o texto">
+            <input type="submit" value="Enviar" class="submit-text">
+        </div>
+        
+    </div>
+    
+    <script src = "https://unpkg.com/konva@9/konva.min.js"></script>
+    <script src="./src/scripts/script.js"></script>
+</body> 
+</html> 

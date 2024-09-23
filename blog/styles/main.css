@@ -1,0 +1,160 @@
+
+.main{
+    width: 74%; height: 1000px;
+    margin: auto;
+
+    flex: 1;
+}
+
+.grid-1{
+    width: 100%; height: 340px;
+    margin: 30px auto 10px auto;
+    background-color: black;
+    background-image: url(/img/bg-travel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(70%);
+}
+
+.grid-2{ 
+    width: 100%; height: 380px; 
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+
+}
+
+.image-about{
+    grid-column: span 2;
+    filter: grayscale(80%);
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+.image-about-p{
+    position: absolute;
+    top: 94%; left: 15.8%;
+    width: 460px; 
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 22pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.913);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 20px;
+    width: 100%; height: 380px;
+    margin: 20px 0px;
+    
+}
+
+.grid-card{
+    position: relative;
+    background-color: white;
+    width: 100%; 
+    height: 100%;
+    border: 0.5px solid rgb(237, 237, 237);
+}
+
+.card-img{
+    width: 100%; height: 180px;
+    background-color: black;
+    filter: grayscale(70%);
+}
+
+.card-category{
+    color: gray;
+    text-decoration: underline;
+    opacity: 0.9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8pt;
+    margin: 25px 0px 7px 0px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 500;
+    width: 60%; margin: 0px auto;
+    text-transform: uppercase;
+}
+
+.grid-card .card-hr{
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    
+}
+
+.grid-card .grid-card-ul{
+    position: absolute;
+    bottom: 3%; left: 8%;
+}
+
+.grid-card li{
+    font-size: 8pt;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 8px;
+
+}
+
+.only{
+    
+    filter: grayscale(80%);
+    padding-top: 50px;
+
+}
+
+.only-p{
+    color: white;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: bold;
+    width: 70%; margin: auto;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.only svg{ 
+    display: block;
+    margin: 10px auto;
+
+}
+
+.only-um{
+    background-image: url(/img/card-barco.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.only-dois{
+    filter: grayscale(50%);
+    background-image: url(/img/card-sol.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-instagram-imgs{
+    background-color: black;
+    width: 100%; height: 260px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 130px 130px;
+}
+
+.card-instagram-imgs img{
+    width: 100%;  height: 100%;
+}

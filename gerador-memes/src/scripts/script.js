@@ -1,18 +1,25 @@
 let button_download = document.querySelector('.button.download');
 var container_img = document.querySelector('.container-img');
-let submit_text = document.querySelector('.submit-text'); // Adicionada a classe correta
+let submit_text = document.querySelector('.submit-text');
 let text = document.querySelector('.input-text');
-
 var img;
 var stage;
+let selectedColor = '#000';
+let selectedSize = 16;
+let selectedFont = 'Arial';
+let selectedStyle = 'normal'
+let active = false;
 
 document.addEventListener('DOMContentLoaded', function(){
     carrega_img();
     move_img();
+    color(); 
+    Size();
+    Font()
     move_text();
+    restart_all();
 });
 
-// Carrega a imagem no container_img
 function carrega_img(){
     var input_file = document.querySelector('.input-file');
 
@@ -28,10 +35,9 @@ function carrega_img(){
 
         var eventImgLoaded = new CustomEvent('imageLoaded', { detail: { image: img } });
         document.dispatchEvent(eventImgLoaded);
-    })
+    });
 }
 
-// Para mover a imagem
 function move_img(){
     document.addEventListener('imageLoaded', function(event) {
         var img = event.detail.image;
@@ -64,6 +70,67 @@ function move_img(){
     });
 }
 
+function Size(){
+    const text_size = document.querySelector('.text-size');
+
+    const mais = document.querySelector('.mais');
+    const menos = document.querySelector('.menos');
+
+    text_size.addEventListener('input', (event) => {
+            selectedSize = event.target.value;
+        });
+
+    mais.addEventListener('click', function(){
+        let valor = parseInt(text_size.value); // Converte o valor para número inteiro
+        valor = valor + 1;
+        text_size.value = valor;
+        selectedSize = valor;
+        alert(selectedSize)
+    })
+
+    menos.addEventListener('click', function(){
+        let valor = parseInt(text_size.value);
+        valor -= 1;
+        text_size.value = valor;
+    })
+
+
+}
+
+function Font(){
+    const font = document.querySelector('.select-font');
+    const buttonStyle = document.querySelector('.button-style');
+
+    font.addEventListener('change', (event) => {
+        selectedFont = event.target.value;
+    })
+
+    buttonStyle.addEventListener('click', function(){
+        active = !active;
+
+        if (active){
+            selectedStyle = 'italic';
+            buttonStyle.style.border = "1px solid #c4c6c6";
+            buttonStyle.style.backgroundColor = '#262626';
+
+        } else {
+            selectedStyle = 'normal';
+            buttonStyle.style.border = 'none';
+            buttonStyle.style.backgroundColor = '#2b2b2b';
+
+        }
+    })
+
+}
+
+function color() {
+    const colorPicker = document.getElementById('colorPicker');
+
+    colorPicker.addEventListener('input', (event) => {
+        selectedColor = event.target.value;
+    });
+}
+
 function move_text(){
     submit_text.addEventListener('click', function(){
         let texto = text.value;
@@ -80,22 +147,33 @@ function move_text(){
             x: width / 2,
             y: height / 2,
             text: texto, 
-            fontSize: 20,
-            fill: 'white',
+            fontSize: selectedSize,
+            fill: selectedColor, 
+            fontFamily: selectedFont,
+            fontStyle: selectedStyle,
             align: 'top',
             verticalAlign: 'middle',
             draggable: true,
         });
 
-
         stage.add(text_layer);
         text_layer.add(textTop);
         text_layer.draw(); 
 
-
         let transform = new Konva.Transformer();
         text_layer.add(transform);
         transform.nodes([textTop]);
-        
     }
 }
+
+function restart_all(){
+    let button_restart = document.querySelector('.button-restart');
+
+    button_restart.addEventListener('click', function(){
+        stage.destroy();
+        text.value = "";
+        text_size.value = "";
+        document.querySelector('.text-size').value = "";  
+    });
+
+}    

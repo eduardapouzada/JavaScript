@@ -1,12 +1,13 @@
 footer{
     width: 100%;
-    height: 110px;
+    height: 150px;
     background-color: white;
     margin-top: 200px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 8pt;
     font-weight: 100;
     text-align: center;
+    color: gray;
 }
 
 .footer li{
@@ -15,7 +16,8 @@ footer{
 }
 
 .footer a{
-    color: black;
+    color: gray;
+    text-decoration: none;
 }
 
 .footer li:hover, a:hover{

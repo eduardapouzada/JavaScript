@@ -129,7 +129,7 @@
 }
 
 .only-um{
-    background-image: url(/blog/img/card-barco.jpg);
+    background-image: url(../img/card-barco.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,7 +138,7 @@
 
 .only-dois{
     filter: grayscale(50%);
-    background-image: url(/blog/img/card-sol.jpg);
+    background-image: url(../img/card-sol.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

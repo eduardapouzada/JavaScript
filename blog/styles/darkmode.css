@@ -1,0 +1,16 @@
+:root {
+    --text: #000;
+    --title: #000;
+    --background-items: white;
+    --background: #f2f2f2;
+    --icons: #000;
+
+    --background-card: #fff;
+
+    --text-light: white;
+    --title-light: #fff;
+    --background-dark: rgb(25, 25, 25);
+    --dark-items: black;
+    --card-dark:black;
+    --dark-icons: #fff;
+  }
